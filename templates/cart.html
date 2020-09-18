@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>product</th>
+                        <th>quantity</th>
+                        <th>suubtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="{% static 'images/one.jpg' %}">
+                                <div>
+                                    <p>Printed t-shirt</p>
+                                    <small>Price:&#8377 50</small><br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td><input type="number" value="1"></td>
+                        <td>&#8377 50</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="{% static 'images/two.jpg' %}">
+                                <div>
+                                    <p>Printed t-shirt</p>
+                                    <small>price:&#8377 50</small><br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>&#8377 50</td>
+                   </tr>
+                   <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="{% static 'images/one.jpg' %}">
+                            <div>
+                                <p>Printed t-shirt</p>
+                                <small>price:&#8377 50</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377 50</td>
+                </tr>
+
+
+                </table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>suubtotal</td>
+                            <td>&#8377 185.0</td>
+                        </tr>
+                        <tr>
+                            <td>tax</td>
+                            <td>&#8377 15</td>
+                        </tr>
+                        <tr>
+                        <td>total</td>
+                        <td>&#8377 200.0</td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+{% endblock %}

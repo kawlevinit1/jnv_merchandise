@@ -1,0 +1,391 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% load static %}
+{% block content %}
+<body>
+
+<!---- gallary--->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="{% static 'images/tshirt/three.jpg'%}" style="width:100%">
+        <div class="text">T-shirt</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="{% static 'images/gallary1.jpg'%}" style="width:100%">
+        <div class="text">Mugs</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="{% static 'images/mobile-cover.jpg'%}" style="width:100%">
+        <div class="text">Mobile Cover</div>
+      </div>
+       <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="{% static 'images/tshirt/two.jpg'%}" style="width:100%">
+        <div class="text">T-shirt</div>
+      </div>
+       <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="{% static 'images/gallary1.jpg'%}" style="width:100%">
+        <div class="text">Mugs  </div>
+      </div>
+       <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="{% static 'images/mug.jpg'%}" style="width:100%">
+        <div class="text">Mobile Cover</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+<!---- gallary ends here ---->
+
+    <!-------- featured product------->
+    <div class="small-container">
+        <h2 class="title">Our Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/two.jpg' %}">
+                <h6 style="text-align: center; font-size: 15px;"><a href="/product" class="btn">T-shirt&#10142</a></h4>
+
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/mug.jpg' %}">
+                <h6 style="text-align: center; font-size: 15px;"><a href="product" class="btn">Mugs&#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/mobile-cover.jpg' %}">
+                <h6 style="text-align: center; font-size: 15px;"><a href="#" class="btn">Mobile Cover&#10143</a></h4>
+            </div>
+        </div>
+        <!-- featured product ends here --->
+      <h2 class="title">Recent Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/two.jpg' %}">
+                <h4>Red printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/one.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+             <div class="col-4">
+                <img src="{% static 'images/tshirt/three.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+             <div class="col-4">
+                <img src="{% static 'images/tshirt/four.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+             <div class="col-4">
+                <img src="{% static 'images/tshirt/five.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+             <div class="col-4">
+                <img src="{% static 'images/tshirt/six.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+             <div class="col-4">
+                <img src="{% static 'images/tshirt/t1.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div> <div class="col-4">
+                <img src="{% static 'images/tshirt/seven.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div> <div class="col-4">
+                <img src="{% static 'images/tshirt/eight.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div> <div class="col-4">
+                <img src="{% static 'images/tshirt/nine.jpg' %}">
+                <h4>Blue printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/ten.jpg' %}">
+                <h4>Green printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/twelve.jpg' %}">
+                <h4>Yellow printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/thirteen.jpg' %}">
+                <h4>Yellow printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/fourteen.jpg' %}">
+                <h4>Yellow printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/fifteen.jpg' %}">
+                <h4>Yellow printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+               <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+            <div class="col-4">
+                <img src="{% static 'images/tshirt/sixteen.jpg' %}">
+                <h4>Yellow printed t-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+                <h4><a href="#" class="btn">&#8377 399 <span style="color:pink">Buy Now &#10142</a></h4>
+            </div>
+        </div>
+    </div>
+    <!--- offer --->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="{% static 'images/tshirt/one.jpg' %}">
+                </div>
+                <div class="col-2">
+                    <h2>Exclusively available on Navodaya Merchandise.</h2>
+                    <h1></h1>
+                    <small>The Navodaya Merchandise present you the brand new
+                        printed T-shirt ,Mugs & Mobile cover of amazing quality
+                    </small>
+                    <a href="#" class="btn">Buy Now &#10142</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----   testimonial---->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Very pleased with the service from this company. The delivery was spot on.
+                         Embroidery was very good.</p>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <div class="img">
+                            <img src="{% static 'images/yash.png' %}">
+                        </div>
+                        <h3>Yash Kajrekar</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <i class="fa fa-quote-left"></i>
+                    <p>this is my review for the brand of the group that
+                        it is being such a nice product that has been delivered
+                        on time great quality grret choice</p>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <div class="img">
+                            <img src="{% static 'images/abhi.png' %}">
+                        </div>
+                        <h3>Abhishek Kadam</h3>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Very pleased with the service from this company. The delivery was spot on.
+                         Embroidery was very good.</p>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <div class="img">
+                            <img src="{% static 'images/abhay.png' %}">
+                        </div>
+                        <h3>Abahy Deshmukh</h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+  
+    <!----- js for toggle menu------>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+{% endblock %}
+

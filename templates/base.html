@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVODAYA MERCHANDISE</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo5.ico' %}">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/footer.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'style/cart.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'style/gallary.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'style/login.css' %}">
+
+</head>
+
+<body>  
+    <!--------  header  -------->
+    <section>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="/index"><img src="{% static 'images/logo4.png' %}" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/index" >Home</a></li>
+                        <li><a href="/product">Products</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li>
+                        {% if user.is_authenticated %}
+                          <li style="color:red"><b>Hello , {{user.username}}</b></li>
+                          <li><a href="/logout">Logout</a></li>
+
+                        {% else %}
+
+                        <li><a href="/register">Signup/Login</span></a></li>
+                        {% endif %}</li>
+                    </ul>
+                </nav>
+                <a href="/cart"><img src="{% static 'images/cart.jpg' %}" width="30px"
+                        height="30px"></a>
+                <img src="{% static 'images/menu.png' %}" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-------- header section ends her ------->
+  {% block content %}
+
+  {% endblock %}
+    <!-------- footer--------->
+    <!-- Footer --> <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Navodaya Merchandise provides the printed t-shirt,mugs and mobile cover
+              those are printed with Navodaya memories , which makes you nostalgic about Navodya.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="">All</a></li>
+              <li><a href="">T-shirt</a></li>
+              <li><a href="">Mugs</a></li>
+              <li><a href="">Mobile Cover</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">FAQ's</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Navoadaya Merchandise</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+<!-- Footer -->
+
+    <!----- js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
